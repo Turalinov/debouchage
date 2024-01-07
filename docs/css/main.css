@@ -349,6 +349,8 @@ html {
 }
 
 body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   overflow-x: hidden;
   color: var(--clr-black);
   margin: 0;
@@ -396,6 +398,15 @@ h6 {
   font-family: "HagridTextTrial", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+h2 {
+  font-size: 91px;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 34px;
+  }
 }
 
 button {
@@ -451,6 +462,92 @@ button {
   .container {
     margin: 0px 20px;
     border: 1px solid orange;
+  }
+}
+
+.accordion__item + .accordion__item {
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .accordion__item + .accordion__item {
+    margin-top: 30px;
+  }
+}
+
+.accordion__control {
+  width: 100%;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #C1C1C1;
+}
+.open .accordion__title::after {
+  transform: rotate(180deg);
+}
+
+.accordion__title {
+  font-family: "HagridTextTrial", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: left;
+  padding-left: 70px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .accordion__title {
+    font-size: 18px;
+    padding-left: 31px;
+  }
+}
+.accordion__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  transition: all 0.5s;
+  background-image: url("../img/faq-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .accordion__title::after {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+.accordion__content {
+  font-size: 20px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  will-change: max-height;
+  transition: all 0.3s ease-out;
+  box-sizing: content-box;
+}
+
+.open .accordion__content {
+  opacity: 1;
+  padding-top: 35px;
+}
+
+.accordion__content {
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .accordion__content {
+    font-size: 14px;
+  }
+}
+
+.accordion__content p + p {
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .accordion__content p + p {
+    margin-top: 15px;
   }
 }
 
@@ -710,6 +807,107 @@ h1.control__title {
   transition: all 0.8s ease 0s;
   opacity: 0;
   visibility: hidden;
+}
+
+.faq {
+  padding: 207px 0 347px;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 1280px) {
+  .faq {
+    padding: 60px 0 1337px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq {
+    padding: 30px 0 726px;
+  }
+}
+.faq::after, .faq::before {
+  content: "";
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.faq::after {
+  left: -120px;
+  bottom: 0;
+  width: 1337px;
+  height: 1345px;
+  background-image: url("../img/faq_decor1@desktop.png");
+  z-index: -1;
+}
+@media screen and (max-width: 1760px) {
+  .faq::after {
+    left: -240px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .faq::after {
+    left: -360px;
+    bottom: -100px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .faq::after {
+    left: -480px;
+    bottom: -100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq::after {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 674px;
+    height: 678px;
+    background-image: url("../img/faq_decor1@mobile.png");
+  }
+}
+.faq::before {
+  right: -70px;
+  top: 230px;
+  width: 1166px;
+  height: 1034px;
+  background-image: url("../img/faq_decor2.svg");
+}
+@media screen and (max-width: 1366px) {
+  .faq::before {
+    top: 300px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .faq::before {
+    display: none;
+  }
+}
+
+.faq__inner {
+  max-width: 906px;
+  position: relative;
+  margin-left: auto;
+}
+@media screen and (max-width: 1366px) {
+  .faq__inner {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .faq__inner {
+    max-width: 100%;
+  }
+}
+
+.faq__title {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .faq__title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
 }
 
 .header__top-list {
@@ -1039,14 +1237,12 @@ h1.control__title {
 }
 
 .welcome__title {
-  font-size: 91px;
   margin-bottom: 90px;
   max-width: 910px;
   line-height: 1;
 }
 @media screen and (max-width: 768px) {
   .welcome__title {
-    font-size: 34px;
     margin-bottom: 40px;
     text-align: center;
   }
