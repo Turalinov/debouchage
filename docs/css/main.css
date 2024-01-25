@@ -321,6 +321,13 @@ template {
   font-weight: 800;
   font-style: normal;
 }
+@font-face {
+  font-family: HagridTextTrial;
+  font-display: swap;
+  src: url("../fonts/HagridTextTrial-Regular.woff2") format("woff2"), url("../fonts/HagridTextTrial-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 :root {
   box-sizing: border-box;
   --clr-black: #090909;
@@ -4582,6 +4589,44 @@ h2.control__title {
     left: initial;
     margin: 46px auto 0;
   }
+}
+
+.types__wrap {
+  display: flex;
+}
+
+.types__list {
+  font-size: 30px;
+  font-family: "HagridTextTrial", sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.types__list--mobile {
+  display: none;
+}
+
+.types__item a {
+  color: var(--clr-red);
+}
+.types__item.active a {
+  color: var(--clr-black);
+}
+
+.types__item + .types__item {
+  margin-left: 40px;
+}
+
+.types__contents {
+  font-family: "HagridTextTrial", sans-serif;
+  font-weight: 700;
+}
+
+.types__content {
+  display: none;
+}
+.types__content.active {
+  display: block;
 }
 
 .white-block--bordered {
