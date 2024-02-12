@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mentions Légales" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/main.min.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+  <script src="https://kit.fontawesome.com/b105926142.js" crossorigin="anonymous"></script>
+  <title>Mentions Légales | O'debouchage</title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon.ico">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="wrapper__content">
+
+      <div class="main">
+
+        <header class="headerr main-headerr lock-padding @@clazz">
+  <!-- под хедером можно создать через after плашку и менять ее цвет при мобилке -->
+
+  <div class="headerr__top-wrap">
+    <div class="container">
+      <!-- первая строка - это режим работы  -->
+      <!-- при скроле можно удалять также этот блок  -->
+      <div class="headerr__top">
+        <div class="headerr__top-additional-block additional-block">
+          <div class="additional-block-item additional-block-item--location">
+            <span>91 / 92 / 94 / 75 / 77</span>
+            <!-- headerr-marker.svg background у span - перенести их всех в img папку-->
+          </div>
+          <div class="additional-block-item additional-block-item--date">
+            <!-- headerr-date.svg  -->
+            <span>7j/7</span>
+          </div>
+          <div class="additional-block-item additional-block-item--time">
+            <!-- headerr-time.svg -->
+            <span>24h/24</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="headerr__bottom-wrap">
+    <div class="headerr__bottom-wrap-dropdown" id="dropdown">
+      <div class="container">
+        <!-- вторая часть самая главная  -->
+        <div class="headerr__bottom">
+
+          <div class="headerr__dropdown">
+            <!-- этот dropdown будет показываться в мобилке когда у него будет класс .active  -->
+
+            <!-- menu  -->
+            <nav class="menu headerr__menu">
+              <ul>
+                <li>
+                  <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                  <a href="about.html">À propos</a>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Nos services</a>
+
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="endoscopic.html">Inspection par Caméra Endoscopique</a>
+                    </li>
+                    <li>
+                      <a href="hydrocurage.html">Hydrocurage</a>
+                    </li>
+                    <li>
+                      <a href="unblocking.html">Débouchage canalisation</a>
+                    </li>
+                    <li>
+                      <a href="sanitation.html">Assainissement</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="tarifs.html">Tarifs</a>
+                </li>
+                <div class="headerr__logo logo">
+                  <a href="index.html" class="logo-link">
+                    <img src="img/header_logo.png" class="logo-img" width="135" height="135">
+                  </a>
+                </div>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- end menu  -->
+
+            <!-- это кнопка справа -->
+            <a href="contact.html" class="headerr__button">
+              Demander un devis
+            </a>
+
+            <!-- additional-block для моб -->
+            <div class="headerr__bottom-additional-block additional-block">
+              <div class="additional-block-item additional-block-item--location">
+                <span>91 / 92 / 94 / 75 / 77</span>
+                <!-- headerr-marker.svg background у span - перенести их всех в img папку-->
+              </div>
+              <div class="additional-block-item additional-block-item--date">
+                <!-- headerr-date.svg  -->
+                <span>7j/7</span>
+              </div>
+              <div class="additional-block-item additional-block-item--time">
+                <!-- headerr-time.svg -->
+                <span>24h/24</span>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- третья часть - по сути для toggle  -->
+    <div class="headerr__mobile">
+      <!-- logo  -->
+      <div class="headerr__mobile-logo logo">
+        <a href="index.html" class="logo-link">
+          <img src="img/header_logo.png" class="logo-img" width="135" height="135">
+        </a>
+      </div>
+
+      <!-- fix-block  -->
+      <div class="headerr__mobile-fix-block fix-block">
+        <div class="fix-block__phone">
+          <a href="tel:0184800187" class="fix-block__phone-elem">01 84 80 01 87
+          </a>
+          <div class="fix-block__warning free-call">
+            Appel Gratuit
+          </div>
+        </div>
+      </div>
+
+
+      <!-- toggle  -->
+      <div class="headerr__toggle-wrap">
+        <button class="headerr__toggle toggle">
+          <span></span>
+        </button>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+</header>
+        <section class="control">
+
+  <div class="container">
+    <!-- control__breadcrumbs -->
+    <div class="control__breadcrumbs breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item breadcrumbs__item--home">
+          <a href="index.html">Accuel</a>
+        </li>
+        <li class="breadcrumbs__item">
+          Mentions Légales
+        </li>
+      </ul>
+    </div>
+    <!-- control__breadcrumbs end  -->
+
+    <h2 class="control__title">Mentions Légales</h2>
+
+  </div>
+</section>
+        <section class="politics">
+  <div class="container">
+    <div class="politics__text">
+      <p>
+        Conformément aux dispositions des articles 6-III et 19 de la Loi n° 2004-575 du 21 juin 2004 pour la Confiance
+        dans
+        l’économie numérique, dite L.C.E.N., nous portons à la connaissance des utilisateurs et visiteurs du site:
+        odebouchage.fr
+      </p>
+
+      <p>
+        les informations suivantes :
+      </p>
+      <h3>
+        les informations suivantes :
+      </h3>
+      <p>
+        Le site odebouchage.fr est la propriété exclusive de O'DEBOUCHAGE, qui l’édite.
+      </p>
+      <p>
+        O'DEBOUCHAGE<br>
+        149 AV DU MAINE 75014 PARIS<br>
+        contact@odebouchage.fr<br>
+        01 84 80 01 87
+      </p>
+      <p>
+        Numéro TVA intracommunautaire :FR01980674329<br>
+        Adresse de courrier électronique : <b>contact@odebouchage.fr</b>
+      </p>
+      <p>
+        Directeur de la publication : <b>Enzo AFONSO INACIO</b><br>
+        Contactez le responsable de la publication : <b>contact@odebouchage.fr</b>
+
+      </p>
+      <h3>
+        HÉBERGEMENT
+      </h3>
+      <p>
+        PLANETHOSTER situé au 4416 Louis B. Mayer, Laval (Québec) H7P 0G1, Canada.
+      </p>
+      <h3>
+        DESCRIPTION DES SERVICES FOURNIS
+      </h3>
+      <p>
+        Le site odebouchage.fr a pour objet de fournir une information concernant l’ensemble des activités de la
+        société. Le
+        proprietaire du site s’efforce de fournir sur le site odebouchage.fr des informations aussi précises que
+        possible.
+        Toutefois, il ne pourra être tenue responsable des omissions, des inexactitudes et des carences dans la mise à
+        jour,
+        qu’elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations. Tous les
+        informations
+        proposées sur le site odebouchage.fr sont données à titre indicatif, sont non exhaustives, et sont susceptibles
+        d’évoluer. Elles sont données sous réserve de modifications ayant été apportées depuis leur mise en ligne.
+      </p>
+      <h3>
+        PROPRIÉTÉ INTELLECTUELLE ET CONTREFAÇONS
+      </h3>
+      <p>
+        Le proprietaire du site est propriétaire des droits de propriété intellectuelle ou détient les droits d’usage
+        sur tous
+        les éléments accessibles sur le site, notamment les textes, images, graphismes, logo, icônes, sons, logiciels…
+        Toute
+        reproduction, représentation, modification, publication, adaptation totale ou partielle des éléments du site,
+        quel que
+        soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable à l’email :
+        contact@odebouchage.fr . Toute exploitation non autorisée du site ou de l’un quelconque de ces éléments qu’il
+        contient
+        sera considérée comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles
+        L.335-2 et
+        suivants du Code de Propriété Intellectuelle.
+      </p>
+      <h3>
+        LIENS HYPERTEXTES ET COOKIES
+      </h3>
+      <p>
+        Le site odebouchage.fr contient un certain nombre de liens hypertextes vers d’autres sites (partenaires,
+        informations …)
+        mis en place avec l’autorisation de le proprietaire du site . Cependant, le proprietaire du site n’a pas la
+        possibilité
+        de vérifier le contenu des sites ainsi visités et décline donc toute responsabilité de ce fait quand aux risques
+        éventuels de contenus illicites. L’utilisateur est informé que lors de ses visites sur le site odebouchage.fr,
+        un ou des
+        cookies sont susceptible de s’installer automatiquement sur son ordinateur. Un cookie est un fichier de petite
+        taille,
+        qui ne permet pas l’identification de l’utilisateur, mais qui enregistre des informations relatives à la
+        navigation d’un
+        ordinateur sur un site. Les données ainsi obtenues visent à faciliter la navigation ultérieure sur le site, et
+        ont
+        également vocation à permettre diverses mesures de fréquentation. Le paramétrage du logiciel de navigation
+        permet
+        d’informer de la présence de cookie et éventuellement, de refuser de la manière décrite à l’adresse suivante :
+        www.cnil.fr Le refus d’installation d’un cookie peut entraîner l’impossibilité d’accéder à certains services.
+        L’utilisateur peut toutefois configurer son ordinateur de la manière suivante, pour refuser l’installation des
+        cookies :
+        Sous Internet Explorer : onglet outil / options internet. Cliquez sur Confidentialité et choisissez Bloquer tous
+        les
+        cookies. Validez sur Ok. Sous Netscape : onglet édition / préférences. Cliquez sur Avancées et choisissez
+        Désactiver les
+        cookies. Validez sur Ok.
+      </p>
+      <h3>
+        PROTECTION DES BIENS ET DES PERSONNES – GESTION DES DONNÉES PERSONNELLES
+      </h3>
+      <p>
+        Utilisateur : Internaute se connectant, utilisant le site susnommé : odebouchage.fr En France, les données
+        personnelles
+        sont notamment protégées par la loi n° 78-87 du 6 janvier 1978, la loi n° 2004-801 du 6 août 2004, l’article L.
+        226-13
+        du Code pénal et la Directive Européenne du 24 octobre 1995.
+      </p>
+      <p>
+        Sur le site odebouchage.fr, le proprietaire du site ne collecte des informations personnelles relatives à
+        l’utilisateur
+        que pour le besoin de certains services proposés par le site odebouchage.fr. L’utilisateur fournit ces
+        informations en
+        toute connaissance de cause, notamment lorsqu’il procède par lui-même à leur saisie. Il est alors précisé à
+        l’utilisateur du site odebouchage.fr l’obligation ou non de fournir ces informations. Conformément aux
+        dispositions des
+        articles 38 et suivants de la loi 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux
+        libertés, tout
+        utilisateur dispose d’un droit d’accès, de rectification, de suppression et d’opposition aux données
+        personnelles le
+        concernant. Pour l’exercer, adressez votre demande à odebouchage.fr par email : email du webmaster ou en
+        effectuant sa
+        demande écrite et signée, accompagnée d’une copie du titre d’identité avec signature du titulaire de la pièce,
+        en
+        précisant l’adresse à laquelle la réponse doit être envoyée.
+      </p>
+      <p>
+        Aucune information personnelle de l’utilisateur du site odebouchage.fr n’est publiée à l’insu de l’utilisateur,
+        échangée, transférée, cédée ou vendue sur un support quelconque à des tiers. Seule l’hypothèse du rachat du site
+        odebouchage.fr à le proprietaire du site et de ses droits permettrait la transmission des dites informations à
+        l’éventuel acquéreur qui serait à son tour tenu de la même obligation de conservation et de modification des
+        données vis
+        à vis de l’utilisateur du site odebouchage.fr
+      </p>
+      <p>
+        Le site odebouchage.fr est en conformité avec le RGPD voir notre politique RGPD.
+      </p>
+      <p>
+        Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998 transposant la directive
+        96/9 du
+        11 mars 1996 relative à la protection juridique des bases de données.
+      </p>
+    </div>
+  </div>
+</section>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="flex content">
+    <div class="logo">
+      <img src="img/footer_logo.png" alt="">
+    </div>
+    <div class="contact">
+      <div class="flex tel">
+        <div class="tel__img">
+          <img src="img/icons/tel.svg" alt="">
+        </div>
+        <span>Téléphone : 01 84 80 01 87</span>
+      </div>
+      <div class="flex tel">
+        <div class="tel__img">
+          <img src="img/icons/mail.svg" alt="">
+        </div>
+        <span>Mail : contact@odebouchage.fr</span>
+      </div>
+
+      <ul class="footer__socials socials">
+
+        <li class="socials__item">
+          <a href="https://www.youtube.com/channel/UCCf6S23ljozTcl6livJEHLQ" class="socials__link" target="_blank">
+            <svg class="socials__icon" viewBox="0 0 35 35">
+              <use xlink:href="img/icons/sprite.svg#yout-icon">
+              </use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a href="https://www.linkedin.com/in/o-debouchage-service-2b05282a0/" class="socials__link" target="_blank">
+            <svg class="socials__icon" viewBox="0 0 35 35">
+              <use xlink:href="img/icons/sprite.svg#link-icon">
+              </use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a href="https://www.instagram.com/odebouchage" class="socials__link" target="_blank">
+            <svg class="socials__icon" viewBox="0 0 35 35">
+              <use xlink:href="img/icons/sprite.svg#insta-icon">
+              </use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a href="https://www.facebook.com/profile.php?id=61553792194009" class="socials__link" target="_blank">
+            <svg class="socials__icon" viewBox="0 0 35 35">
+              <use xlink:href="img/icons/sprite.svg#fb-icon"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a href="https://www.tiktok.com/@odebouchage" class="socials__link" target="_blank">
+            <svg class="socials__icon" viewBox="0 0 35 35">
+              <use xlink:href="img/icons/sprite.svg#tiktok-icon"></use>
+            </svg>
+          </a>
+        </li>
+
+      </ul>
+
+
+      <div class="small">
+        <div>
+          <a href="politics.html">
+            Politique de confidentialité
+          </a>
+        </div>
+        <div>
+          <a href="cookies.html">
+            Politique des Cookies
+          </a>
+        </div>
+        <div>
+          <a href="mentions.html">
+            Mentions Légales
+          </a>
+        </div>
+        <div>
+          <a href="https://incrona.com/" target="_blank " class="footer__incrona">
+            <span>
+              Site développé par
+            </span>
+            <img src="img/icons/incrona.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="links">
+      <div class="flex main">
+        <a href="index.html">
+          Accueil
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+            <path
+              d="M18.3849 2H3.62265C3.45952 2 3.30307 2.0648 3.18772 2.18016C3.07236 2.29551 3.00756 2.45196 3.00756 2.61509C3.00756 2.77823 3.07236 2.93468 3.18772 3.05003C3.30307 3.16538 3.45952 3.23019 3.62265 3.23019H16.8998L3.18778 16.9425C3.12903 16.9992 3.08217 17.0671 3.04994 17.1421C3.0177 17.2172 3.00073 17.2979 3.00002 17.3796C2.99931 17.4612 3.01488 17.5422 3.0458 17.6178C3.07673 17.6934 3.1224 17.7621 3.18016 17.8198C3.23791 17.8776 3.30659 17.9233 3.38218 17.9542C3.45777 17.9851 3.53877 18.0007 3.62044 18C3.70211 17.9993 3.78282 17.9823 3.85787 17.9501C3.93291 17.9178 4.00078 17.871 4.05752 17.8122L17.7698 4.09993V17.3773C17.7698 17.5405 17.8346 17.6969 17.95 17.8123C18.0653 17.9276 18.2218 17.9924 18.3849 17.9924C18.548 17.9924 18.7045 17.9276 18.8198 17.8123C18.9352 17.6969 19 17.5405 19 17.3773V2.61509C19 2.45196 18.9352 2.29551 18.8198 2.18016C18.7045 2.0648 18.548 2 18.3849 2Z"
+              fill="#DD2D34" />
+          </svg>
+        </a>
+        <a href="about.html">
+          A propos
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+            <path
+              d="M18.3849 2H3.62265C3.45952 2 3.30307 2.0648 3.18772 2.18016C3.07236 2.29551 3.00756 2.45196 3.00756 2.61509C3.00756 2.77823 3.07236 2.93468 3.18772 3.05003C3.30307 3.16538 3.45952 3.23019 3.62265 3.23019H16.8998L3.18778 16.9425C3.12903 16.9992 3.08217 17.0671 3.04994 17.1421C3.0177 17.2172 3.00073 17.2979 3.00002 17.3796C2.99931 17.4612 3.01488 17.5422 3.0458 17.6178C3.07673 17.6934 3.1224 17.7621 3.18016 17.8198C3.23791 17.8776 3.30659 17.9233 3.38218 17.9542C3.45777 17.9851 3.53877 18.0007 3.62044 18C3.70211 17.9993 3.78282 17.9823 3.85787 17.9501C3.93291 17.9178 4.00078 17.871 4.05752 17.8122L17.7698 4.09993V17.3773C17.7698 17.5405 17.8346 17.6969 17.95 17.8123C18.0653 17.9276 18.2218 17.9924 18.3849 17.9924C18.548 17.9924 18.7045 17.9276 18.8198 17.8123C18.9352 17.6969 19 17.5405 19 17.3773V2.61509C19 2.45196 18.9352 2.29551 18.8198 2.18016C18.7045 2.0648 18.548 2 18.3849 2Z"
+              fill="#DD2D34" />
+          </svg>
+        </a>
+        <a href="tarifs.html">
+          Tarifs
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+            <path
+              d="M18.3849 2H3.62265C3.45952 2 3.30307 2.0648 3.18772 2.18016C3.07236 2.29551 3.00756 2.45196 3.00756 2.61509C3.00756 2.77823 3.07236 2.93468 3.18772 3.05003C3.30307 3.16538 3.45952 3.23019 3.62265 3.23019H16.8998L3.18778 16.9425C3.12903 16.9992 3.08217 17.0671 3.04994 17.1421C3.0177 17.2172 3.00073 17.2979 3.00002 17.3796C2.99931 17.4612 3.01488 17.5422 3.0458 17.6178C3.07673 17.6934 3.1224 17.7621 3.18016 17.8198C3.23791 17.8776 3.30659 17.9233 3.38218 17.9542C3.45777 17.9851 3.53877 18.0007 3.62044 18C3.70211 17.9993 3.78282 17.9823 3.85787 17.9501C3.93291 17.9178 4.00078 17.871 4.05752 17.8122L17.7698 4.09993V17.3773C17.7698 17.5405 17.8346 17.6969 17.95 17.8123C18.0653 17.9276 18.2218 17.9924 18.3849 17.9924C18.548 17.9924 18.7045 17.9276 18.8198 17.8123C18.9352 17.6969 19 17.5405 19 17.3773V2.61509C19 2.45196 18.9352 2.29551 18.8198 2.18016C18.7045 2.0648 18.548 2 18.3849 2Z"
+              fill="#DD2D34" />
+          </svg>
+        </a>
+        <a href="blog.html">
+          Blog
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+            <path
+              d="M18.3849 2H3.62265C3.45952 2 3.30307 2.0648 3.18772 2.18016C3.07236 2.29551 3.00756 2.45196 3.00756 2.61509C3.00756 2.77823 3.07236 2.93468 3.18772 3.05003C3.30307 3.16538 3.45952 3.23019 3.62265 3.23019H16.8998L3.18778 16.9425C3.12903 16.9992 3.08217 17.0671 3.04994 17.1421C3.0177 17.2172 3.00073 17.2979 3.00002 17.3796C2.99931 17.4612 3.01488 17.5422 3.0458 17.6178C3.07673 17.6934 3.1224 17.7621 3.18016 17.8198C3.23791 17.8776 3.30659 17.9233 3.38218 17.9542C3.45777 17.9851 3.53877 18.0007 3.62044 18C3.70211 17.9993 3.78282 17.9823 3.85787 17.9501C3.93291 17.9178 4.00078 17.871 4.05752 17.8122L17.7698 4.09993V17.3773C17.7698 17.5405 17.8346 17.6969 17.95 17.8123C18.0653 17.9276 18.2218 17.9924 18.3849 17.9924C18.548 17.9924 18.7045 17.9276 18.8198 17.8123C18.9352 17.6969 19 17.5405 19 17.3773V2.61509C19 2.45196 18.9352 2.29551 18.8198 2.18016C18.7045 2.0648 18.548 2 18.3849 2Z"
+              fill="#DD2D34" />
+          </svg>
+        </a>
+        <a href="contact.html">
+          Contact
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+            <path
+              d="M18.3849 2H3.62265C3.45952 2 3.30307 2.0648 3.18772 2.18016C3.07236 2.29551 3.00756 2.45196 3.00756 2.61509C3.00756 2.77823 3.07236 2.93468 3.18772 3.05003C3.30307 3.16538 3.45952 3.23019 3.62265 3.23019H16.8998L3.18778 16.9425C3.12903 16.9992 3.08217 17.0671 3.04994 17.1421C3.0177 17.2172 3.00073 17.2979 3.00002 17.3796C2.99931 17.4612 3.01488 17.5422 3.0458 17.6178C3.07673 17.6934 3.1224 17.7621 3.18016 17.8198C3.23791 17.8776 3.30659 17.9233 3.38218 17.9542C3.45777 17.9851 3.53877 18.0007 3.62044 18C3.70211 17.9993 3.78282 17.9823 3.85787 17.9501C3.93291 17.9178 4.00078 17.871 4.05752 17.8122L17.7698 4.09993V17.3773C17.7698 17.5405 17.8346 17.6969 17.95 17.8123C18.0653 17.9276 18.2218 17.9924 18.3849 17.9924C18.548 17.9924 18.7045 17.9276 18.8198 17.8123C18.9352 17.6969 19 17.5405 19 17.3773V2.61509C19 2.45196 18.9352 2.29551 18.8198 2.18016C18.7045 2.0648 18.548 2 18.3849 2Z"
+              fill="#DD2D34" />
+          </svg>
+        </a>
+      </div>
+      <div class="flex second services">
+        <div class="fl1">
+          <div><a href="sanitation.html">Assainissement</a></div>
+          <div><a href="hydrocurage.html">Hydrocurage</a></div>
+        </div>
+        <div class="fl1">
+          <div><a href="endoscopic.html">Inspection par caméra</a></div>
+          <div><a href="unblocking.html">Débouchage de canalisation</a></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="small1 d-none">
+      <div>
+        <a href="politics.html">
+          Politique de confidentialité
+        </a>
+      </div>
+      <div>
+        <a href="cookies.html">
+          Politique des Cookies
+        </a>
+      </div>
+      <div>
+        <a href="mentions.html">
+          Mentions Légales
+        </a>
+      </div>
+      <div>
+        <a href="https://incrona.com" target="_blank" class="footer__incrona">
+          <span>
+            Site développé par
+          </span>
+          <img src="img/icons/incrona.svg" alt="">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+<div class="fix-block">
+  <div class="fix-block__phone">
+    <a href="tel:0184800187" class="fix-block__phone-elem">01 84 80 01 87
+    </a>
+    <div class="fix-block__warning free-call">
+      Appel Gratuit
+    </div>
+  </div>
+</div>
+<!-- 1. Обратный звонок  -->
+<div class="modal" id="modal-second">
+  <div class="modal__content">
+    <!-- button  -->
+    <button class="modal__close">
+    </button>
+    <div class="modal__inner">
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+<script src="js/bundle.min.js"></script>
+<script src="vendor/map.js"></script>
+
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ1PgpP0t6s1sAsXYM_zn9MZ7MEVeMBlk&callback=initMap">
+  </script>
+
+
+
+</body>
+
+</html>
+</body>
+
+</html>

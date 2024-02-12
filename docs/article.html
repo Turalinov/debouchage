@@ -18,7 +18,7 @@
 
 
   <script src="https://kit.fontawesome.com/b105926142.js" crossorigin="anonymous"></script>
-  <title>Blog | O'debouchage</title>
+  <title>Article | O'debouchage</title>
 
   <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -57,7 +57,7 @@
       <div class="headerr__top">
         <div class="headerr__top-additional-block additional-block">
           <div class="additional-block-item additional-block-item--location">
-            <span>91 / 92 / 94 / 77 / 75</span>
+            <span>91 / 92 / 94 / 75 / 77</span>
             <!-- headerr-marker.svg background у span - перенести их всех в img папку-->
           </div>
           <div class="additional-block-item additional-block-item--date">
@@ -118,8 +118,8 @@
                     <img src="img/header_logo.png" class="logo-img" width="135" height="135">
                   </a>
                 </div>
-                <li class="disabl">
-                  <a>Blog</a>
+                <li>
+                  <a href="blog.html">Blog</a>
                 </li>
                 <li>
                   <a href="contact.html">Contact</a>
@@ -136,7 +136,7 @@
             <!-- additional-block для моб -->
             <div class="headerr__bottom-additional-block additional-block">
               <div class="additional-block-item additional-block-item--location">
-                <span>91 / 92 / 94 / 77 / 75</span>
+                <span>91 / 92 / 94 / 75 / 77</span>
                 <!-- headerr-marker.svg background у span - перенести их всех в img папку-->
               </div>
               <div class="additional-block-item additional-block-item--date">
@@ -250,6 +250,7 @@
           L'entretien préventif des canalisations est une étape essentielle pour préserver l'intégrité de votre système
           de
           plomberie et pour éviter des frais exorbitants.
+          <img src="img/blog-photo.png" alt="">
         </p>
         <h3>
           Pourquoi l'entretien des canalisations est essentiel ?
@@ -293,7 +294,8 @@
       </div>
     </div>
   </div>
-</article><section class="latest">
+</article>
+        <section class="latest">
   <div class="container">
     <h2 class="latest__title">
       Derniers articles
@@ -448,28 +450,80 @@
         <div class="tel__img">
           <img src="img/icons/mail.svg" alt="">
         </div>
-        <span>Mail : contact@odebuchage.fr</span>
+        <span>Mail : contact@odebouchage.fr</span>
       </div>
-      <!--      <div class="flex tel">-->
-      <!--        <img src="img/icons/header-marker.svg" alt="">-->
-      <!--        <span>Adresse : 149 Avenue du Maine, Paris 75014</span>-->
-      <!--      </div>-->
+
+      <ul class="footer__socials socials">
+
+        <li class="socials__item">
+          <a href="https://www.youtube.com/channel/UCCf6S23ljozTcl6livJEHLQ" class="socials__link" target="_blank">
+            <svg class="socials__icon" viewBox="0 0 35 35">
+              <use xlink:href="img/icons/sprite.svg#yout-icon">
+              </use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a href="https://www.linkedin.com/in/o-debouchage-service-2b05282a0/" class="socials__link" target="_blank">
+            <svg class="socials__icon" viewBox="0 0 35 35">
+              <use xlink:href="img/icons/sprite.svg#link-icon">
+              </use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a href="https://www.instagram.com/odebouchage" class="socials__link" target="_blank">
+            <svg class="socials__icon" viewBox="0 0 35 35">
+              <use xlink:href="img/icons/sprite.svg#insta-icon">
+              </use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a href="https://www.facebook.com/profile.php?id=61553792194009" class="socials__link" target="_blank">
+            <svg class="socials__icon" viewBox="0 0 35 35">
+              <use xlink:href="img/icons/sprite.svg#fb-icon"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a href="https://www.tiktok.com/@odebouchage" class="socials__link" target="_blank">
+            <svg class="socials__icon" viewBox="0 0 35 35">
+              <use xlink:href="img/icons/sprite.svg#tiktok-icon"></use>
+            </svg>
+          </a>
+        </li>
+
+      </ul>
+
+
       <div class="small">
         <div>
-          <a href="#">
+          <a href="politics.html">
             Politique de confidentialité
           </a>
         </div>
         <div>
-          <a href="#">
+          <a href="cookies.html">
+            Politique des Cookies
+          </a>
+        </div>
+        <div>
+          <a href="mentions.html">
             Mentions Légales
           </a>
         </div>
         <div>
-          <span>
-            Site développé par
-          </span>
-          <img src="img/icons/incrona.svg" alt="">
+          <a href="https://incrona.com/" target="_blank " class="footer__incrona">
+            <span>
+              Site développé par
+            </span>
+            <img src="img/icons/incrona.svg" alt="">
+          </a>
         </div>
       </div>
     </div>
@@ -499,14 +553,14 @@
               fill="#DD2D34" />
           </svg>
         </a>
-        <!-- <a href="#">
+        <a href="blog.html">
           Blog
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
             <path
               d="M18.3849 2H3.62265C3.45952 2 3.30307 2.0648 3.18772 2.18016C3.07236 2.29551 3.00756 2.45196 3.00756 2.61509C3.00756 2.77823 3.07236 2.93468 3.18772 3.05003C3.30307 3.16538 3.45952 3.23019 3.62265 3.23019H16.8998L3.18778 16.9425C3.12903 16.9992 3.08217 17.0671 3.04994 17.1421C3.0177 17.2172 3.00073 17.2979 3.00002 17.3796C2.99931 17.4612 3.01488 17.5422 3.0458 17.6178C3.07673 17.6934 3.1224 17.7621 3.18016 17.8198C3.23791 17.8776 3.30659 17.9233 3.38218 17.9542C3.45777 17.9851 3.53877 18.0007 3.62044 18C3.70211 17.9993 3.78282 17.9823 3.85787 17.9501C3.93291 17.9178 4.00078 17.871 4.05752 17.8122L17.7698 4.09993V17.3773C17.7698 17.5405 17.8346 17.6969 17.95 17.8123C18.0653 17.9276 18.2218 17.9924 18.3849 17.9924C18.548 17.9924 18.7045 17.9276 18.8198 17.8123C18.9352 17.6969 19 17.5405 19 17.3773V2.61509C19 2.45196 18.9352 2.29551 18.8198 2.18016C18.7045 2.0648 18.548 2 18.3849 2Z"
               fill="#DD2D34" />
           </svg>
-        </a> -->
+        </a>
         <a href="contact.html">
           Contact
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
@@ -516,54 +570,47 @@
           </svg>
         </a>
       </div>
-      <!-- <div class="flex second services">
+      <div class="flex second services">
         <div class="fl1">
-          <div><a href="#">Assainissement</a></div>
-          <div><a href="">Hydrocurage</a></div>
+          <div><a href="sanitation.html">Assainissement</a></div>
+          <div><a href="hydrocurage.html">Hydrocurage</a></div>
         </div>
         <div class="fl1">
-          <div><a href="#">Inspection par caméra</a></div>
-          <div><a href="#">Débouchage de canalisation</a></div>
+          <div><a href="endoscopic.html">Inspection par caméra</a></div>
+          <div><a href="unblocking.html">Débouchage de canalisation</a></div>
         </div>
-      </div> -->
+      </div>
     </div>
-    <!--    <div class="links-mobile d-none">-->
-    <!--      <div class="flex main">-->
-    <!--        <a href="#">-->
-    <!--          Inspection par caméra-->
-    <!--        </a>-->
-    <!--        <a href="about.html">-->
-    <!--          Hydrocurage-->
-    <!--        </a>-->
-    <!--        <a href="tarifs.html">-->
-    <!--          Assainissement-->
-    <!--        </a>-->
-    <!--        <a href="contact.html">-->
-    <!--          Débouchage de canalisation-->
-    <!--        </a>-->
-    <!--      </div>-->
-    <!--    </div>-->
+
 
     <div class="small1 d-none">
       <div>
-        <a href="#">
+        <a href="politics.html">
           Politique de confidentialité
         </a>
       </div>
       <div>
-        <a href="#">
+        <a href="cookies.html">
+          Politique des Cookies
+        </a>
+      </div>
+      <div>
+        <a href="mentions.html">
           Mentions Légales
         </a>
       </div>
       <div>
-        <span>
-          Site développé par
-        </span>
-        <img src="img/icons/incrona.svg" alt="">
+        <a href="https://incrona.com" target="_blank" class="footer__incrona">
+          <span>
+            Site développé par
+          </span>
+          <img src="img/icons/incrona.svg" alt="">
+        </a>
       </div>
     </div>
 
   </div>
+
 </footer>
 
 <div class="fix-block">
@@ -575,7 +622,16 @@
     </div>
   </div>
 </div>
-
+<!-- 1. Обратный звонок  -->
+<div class="modal" id="modal-second">
+  <div class="modal__content">
+    <!-- button  -->
+    <button class="modal__close">
+    </button>
+    <div class="modal__inner">
+    </div>
+  </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 
@@ -585,7 +641,6 @@
 <script async
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ1PgpP0t6s1sAsXYM_zn9MZ7MEVeMBlk&callback=initMap">
   </script>
-
 
 
 
