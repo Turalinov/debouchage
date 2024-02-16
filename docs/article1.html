@@ -45,574 +45,511 @@
   <div class="wrapper">
     <div class="wrapper__content">
 
-      <div class="main">
 
-        <header class="headerr main-headerr lock-padding @@clazz">
-          <!-- под хедером можно создать через after плашку и менять ее цвет при мобилке -->
+      <header class="headerr main-headerr lock-padding @@clazz">
+        <!-- под хедером можно создать через after плашку и менять ее цвет при мобилке -->
 
-          <div class="headerr__top-wrap">
+        <div class="headerr__top-wrap">
+          <div class="container">
+            <!-- первая строка - это режим работы  -->
+            <!-- при скроле можно удалять также этот блок  -->
+            <div class="headerr__top">
+              <div class="headerr__top-additional-block additional-block">
+                <div class="additional-block-item additional-block-item--location">
+                  <span>91 / 92 / 94 / 75 / 77</span>
+                  <!-- headerr-marker.svg background у span - перенести их всех в img папку-->
+                </div>
+                <div class="additional-block-item additional-block-item--date">
+                  <!-- headerr-date.svg  -->
+                  <span>7j/7</span>
+                </div>
+                <div class="additional-block-item additional-block-item--time">
+                  <!-- headerr-time.svg -->
+                  <span>24h/24</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="headerr__bottom-wrap">
+          <div class="headerr__bottom-wrap-dropdown" id="dropdown">
             <div class="container">
-              <!-- первая строка - это режим работы  -->
-              <!-- при скроле можно удалять также этот блок  -->
-              <div class="headerr__top">
-                <div class="headerr__top-additional-block additional-block">
-                  <div class="additional-block-item additional-block-item--location">
-                    <span>91 / 92 / 94 / 75 / 77</span>
-                    <!-- headerr-marker.svg background у span - перенести их всех в img папку-->
-                  </div>
-                  <div class="additional-block-item additional-block-item--date">
-                    <!-- headerr-date.svg  -->
-                    <span>7j/7</span>
-                  </div>
-                  <div class="additional-block-item additional-block-item--time">
-                    <!-- headerr-time.svg -->
-                    <span>24h/24</span>
-                  </div>
-                </div>
-              </div>
+              <!-- вторая часть самая главная  -->
+              <div class="headerr__bottom">
 
-            </div>
-          </div>
+                <div class="headerr__dropdown">
+                  <!-- этот dropdown будет показываться в мобилке когда у него будет класс .active  -->
 
-          <div class="headerr__bottom-wrap">
-            <div class="headerr__bottom-wrap-dropdown" id="dropdown">
-              <div class="container">
-                <!-- вторая часть самая главная  -->
-                <div class="headerr__bottom">
+                  <!-- menu  -->
+                  <nav class="menu headerr__menu">
+                    <ul>
+                      <li>
+                        <a href="index.html">Accueil</a>
+                      </li>
+                      <li>
+                        <a href="about.html">À propos</a>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="#">Nos services</a>
 
-                  <div class="headerr__dropdown">
-                    <!-- этот dropdown будет показываться в мобилке когда у него будет класс .active  -->
-
-                    <!-- menu  -->
-                    <nav class="menu headerr__menu">
-                      <ul>
-                        <li>
-                          <a href="index.html">Accueil</a>
-                        </li>
-                        <li>
-                          <a href="about.html">À propos</a>
-                        </li>
-                        <li class="menu-item-has-children">
-                          <a href="#">Nos services</a>
-
-                          <ul class="sub-menu">
-                            <li>
-                              <a href="endoscopic.html">Inspection par Caméra Endoscopique</a>
-                            </li>
-                            <li>
-                              <a href="hydrocurage.html">Hydrocurage</a>
-                            </li>
-                            <li>
-                              <a href="unblocking.html">Débouchage canalisation</a>
-                            </li>
-                            <li>
-                              <a href="sanitation.html">Assainissement</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="tarifs.html">Tarifs</a>
-                        </li>
-                        <div class="headerr__logo logo">
-                          <a href="index.html" class="logo-link">
-                            <img src="img/header_logo.png" class="logo-img" width="135" height="135">
-                          </a>
-                        </div>
-                        <li>
-                          <a href="blog.html">Blog</a>
-                        </li>
-                        <li>
-                          <a href="contact.html">Contact</a>
-                        </li>
-                      </ul>
-                    </nav>
-                    <!-- end menu  -->
-
-                    <!-- это кнопка справа -->
-                    <a href="contact.html" class="headerr__button">
-                      Demander un devis
-                    </a>
-
-                    <!-- additional-block для моб -->
-                    <div class="headerr__bottom-additional-block additional-block">
-                      <div class="additional-block-item additional-block-item--location">
-                        <span>91 / 92 / 94 / 75 / 77</span>
-                        <!-- headerr-marker.svg background у span - перенести их всех в img папку-->
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="hydrocurage.html">Inspection par Caméra Endoscopique</a>
+                          </li>
+                          <li>
+                            <a href="hydrocurage.html">Hydrocurage</a>
+                          </li>
+                          <li>
+                            <a href="unblocking.html">Débouchage canalisation</a>
+                          </li>
+                          <li>
+                            <a href="sanitation.html">Assainissement</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="tarifs.html">Tarifs</a>
+                      </li>
+                      <div class="headerr__logo logo">
+                        <a href="index.html" class="logo-link">
+                          <img src="img/header_logo.png" class="logo-img" width="135" height="135">
+                        </a>
                       </div>
-                      <div class="additional-block-item additional-block-item--date">
-                        <!-- headerr-date.svg  -->
-                        <span>7j/7</span>
-                      </div>
-                      <div class="additional-block-item additional-block-item--time">
-                        <!-- headerr-time.svg -->
-                        <span>24h/24</span>
-                      </div>
-                    </div>
+                      <li>
+                        <a href="blog.html">Blog</a>
+                      </li>
+                      <li>
+                        <a href="contact.html">Contact</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!-- end menu  -->
 
-                  </div>
-
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="container">
-            <!-- третья часть - по сути для toggle  -->
-            <div class="headerr__mobile">
-              <!-- logo  -->
-              <div class="headerr__mobile-logo logo">
-                <a href="index.html" class="logo-link">
-                  <img src="img/header_logo.png" class="logo-img" width="135" height="135">
-                </a>
-              </div>
-
-              <!-- fix-block  -->
-              <div class="headerr__mobile-fix-block fix-block">
-                <div class="fix-block__phone">
-                  <a href="tel:0184800187" class="fix-block__phone-elem">01 84 80 01 87
+                  <!-- это кнопка справа -->
+                  <a href="contact.html" class="headerr__button">
+                    Demander un devis
                   </a>
-                  <div class="fix-block__warning free-call">
-                    Appel Gratuit
+
+                  <!-- additional-block для моб -->
+                  <div class="headerr__bottom-additional-block additional-block">
+                    <div class="additional-block-item additional-block-item--location">
+                      <span>91 / 92 / 94 / 75 / 77</span>
+                      <!-- headerr-marker.svg background у span - перенести их всех в img папку-->
+                    </div>
+                    <div class="additional-block-item additional-block-item--date">
+                      <!-- headerr-date.svg  -->
+                      <span>7j/7</span>
+                    </div>
+                    <div class="additional-block-item additional-block-item--time">
+                      <!-- headerr-time.svg -->
+                      <span>24h/24</span>
+                    </div>
                   </div>
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <!-- третья часть - по сути для toggle  -->
+          <div class="headerr__mobile">
+            <!-- logo  -->
+            <div class="headerr__mobile-logo logo">
+              <a href="index.html" class="logo-link">
+                <img src="img/header_logo.png" class="logo-img" width="135" height="135">
+              </a>
+            </div>
+
+            <!-- fix-block  -->
+            <div class="headerr__mobile-fix-block fix-block">
+              <div class="fix-block__phone">
+                <a href="tel:0184800187" class="fix-block__phone-elem">01 84 80 01 87
+                </a>
+                <div class="fix-block__warning free-call">
+                  Appel Gratuit
                 </div>
               </div>
+            </div>
 
 
-              <!-- toggle  -->
-              <div class="headerr__toggle-wrap">
-                <button class="headerr__toggle toggle">
-                  <span></span>
-                </button>
+            <!-- toggle  -->
+            <div class="headerr__toggle-wrap">
+              <button class="headerr__toggle toggle">
+                <span></span>
+              </button>
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+
+      </header>
+
+      <section class="control">
+
+        <div class="container">
+          <!-- control__breadcrumbs -->
+          <div class="control__breadcrumbs breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item breadcrumbs__item--home">
+                <a href="index.html">Accuel</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="blog.html">Blog</a>
+              </li>
+              <li class="breadcrumbs__item">
+                O'Debouchage...
+              </li>
+            </ul>
+          </div>
+          <!-- control__breadcrumbs end  -->
+
+          <h1 class="control__title">O'Debouchage : Votre Partenaire Éco-Responsable pour un Débouchage Sain</h1>
+
+        </div>
+      </section>
+      <article class="article">
+        <div class="container">
+          <!-- author  -->
+          <div class="article__author author">
+
+            <div class="author__avatar">
+              <img src="img/article-avatar.png" alt="avatar" class="author__avatar-img">
+            </div>
+            <div class="author__info">
+              <div class="author__author">
+                Enzo - Staff
               </div>
-
+              <div class="author__additional">
+                <span class="author__date">3 mai, 2023</span> · <span>
+                  7
+                </span> min of reading
+              </div>
 
             </div>
 
           </div>
 
+          <div class="article__content-wrap">
+            <div class="article__content">
+              <p>
+                Un Engagement Fort pour la Planète
 
+              </p>
+              <p>
+                Chez O'Debouchage, la préservation de l'environnement n'est pas une option, c'est une priorité. Nous
+                avons fait le choix
+                délibéré de ne pas utiliser de produits chimiques dans nos interventions. Notre approche écologique
+                nous permet de
+                minimiser notre empreinte carbone tout en fournissant des services de haute qualité.
+              </p>
 
-        </header>
+              <p>
+                Des Solutions Écologiques pour Chaque Problème
+              </p>
+              <p>
+                Nous adaptons nos méthodes à chaque situation unique, en privilégiant des solutions écologiques :
+              </p>
+              <ul>
+                <li>
+                  Débouchage Manuel : Une méthode simple et efficace qui n'implique pas l'utilisation de produits
+                  chimiques.</li>
+                <li> Pompe Haute Pression : Nous utilisons l'eau à haute pression pour éliminer les obstructions,
+                  sans
+                  avoir besoin de
+                  substances nocives.</li>
+                <li> Curage de Canalisation : Une technique de nettoyage en profondeur qui utilise des outils
+                  mécaniques, éliminant le
+                  besoin de produits chimiques.
 
-        <section class="control">
-
-          <div class="container">
-            <!-- control__breadcrumbs -->
-            <div class="control__breadcrumbs breadcrumbs">
-              <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__item breadcrumbs__item--home">
-                  <a href="index.html">Accuel</a>
-                </li>
-                <li class="breadcrumbs__item">
-                  <a href="blog.html">Blog</a>
-                </li>
-                <li class="breadcrumbs__item">
-                  O'Debouchage...
                 </li>
               </ul>
-            </div>
-            <!-- control__breadcrumbs end  -->
-
-            <h1 class="control__title">O'Debouchage : Votre Partenaire Éco-Responsable pour un Débouchage Sain</h1>
-
-          </div>
-        </section>
-        <article class="article">
-          <div class="container">
-            <!-- author  -->
-            <div class="article__author author">
-
-              <div class="author__avatar">
-                <img src="img/article-avatar.png" alt="avatar" class="author__avatar-img">
-              </div>
-              <div class="author__info">
-                <div class="author__author">
-                  Enzo - Staff
-                </div>
-                <div class="author__additional">
-                  <span class="author__date">3 mai, 2023</span> · <span>
-                    7
-                  </span> min of reading
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="article__content-wrap">
-              <div class="article__content">
-                <p>
-                  Un Engagement Fort pour la Planète
-
-                </p>
-                <p>
-                  Chez O'Debouchage, la préservation de l'environnement n'est pas une option, c'est une priorité. Nous
-                  avons fait le choix
-                  délibéré de ne pas utiliser de produits chimiques dans nos interventions. Notre approche écologique
-                  nous permet de
-                  minimiser notre empreinte carbone tout en fournissant des services de haute qualité.
-                </p>
-
-                <p>
-                  Des Solutions Écologiques pour Chaque Problème
-                </p>
-                <p>
-                  Nous adaptons nos méthodes à chaque situation unique, en privilégiant des solutions écologiques :
-                </p>
-                <ul>
-                  <li>
-                    Débouchage Manuel : Une méthode simple et efficace qui n'implique pas l'utilisation de produits
-                    chimiques.</li>
-                  <li> Pompe Haute Pression : Nous utilisons l'eau à haute pression pour éliminer les obstructions,
-                    sans
-                    avoir besoin de
-                    substances nocives.</li>
-                  <li> Curage de Canalisation : Une technique de nettoyage en profondeur qui utilise des outils
-                    mécaniques, éliminant le
-                    besoin de produits chimiques.
-
-                  </li>
-                </ul>
-                <p>
-                  Une Approche Éco-Consciente
-                </p>
-                <p>
-                  Nous sommes conscients que chaque action compte quand il s'agit de protéger notre planète. C'est
-                  pourquoi nous avons
-                  adopté une approche éco-consciente dans tous les aspects de notre entreprise, de la gestion des
-                  déchets à la formation
-                  de notre personnel.
-                </p>
-                <p>
-                  Note Importante
-                </p>
-                <p>
-                  Veuillez noter que nous ne proposons pas de services de vidange ou de transport de matières. Notre
-                  spécialité est le
-                  débouchage et le curage de canalisations, toujours dans le respect de l'environnement.
-                </p>
-              </div>
+              <p>
+                Une Approche Éco-Consciente
+              </p>
+              <p>
+                Nous sommes conscients que chaque action compte quand il s'agit de protéger notre planète. C'est
+                pourquoi nous avons
+                adopté une approche éco-consciente dans tous les aspects de notre entreprise, de la gestion des
+                déchets à la formation
+                de notre personnel.
+              </p>
+              <p>
+                Note Importante
+              </p>
+              <p>
+                Veuillez noter que nous ne proposons pas de services de vidange ou de transport de matières. Notre
+                spécialité est le
+                débouchage et le curage de canalisations, toujours dans le respect de l'environnement.
+              </p>
             </div>
           </div>
-        </article>
-        <section class="latest">
-          <div class="container">
-            <h2 class="latest__title">
-              Derniers articles
-            </h2>
+        </div>
+      </article>
+      <section class="latest">
+        <div class="container">
+          <h2 class="latest__title">
+            Derniers articles
+          </h2>
 
-            <div class="latest__list-wrap">
-              <div class="latest__list">
-                <!-- . -->
-                <!-- item 1 -->
-                <div class="latest__article-card article-card">
+          <div class="latest__list-wrap">
+            <div class="latest__list">
+              <!-- . -->
+              <!-- item 1 -->
+              <div class="latest__article-card article-card">
 
-                  <!-- preview -->
-                  <div class="article-card__preview">
-                    <img src="img/article.png" alt="" class="article-card__preview-elem">
+                <!-- preview -->
+                <div class="article-card__preview">
+                  <img src="img/article.png" alt="" class="article-card__preview-elem">
 
-                    <!-- absolute  -->
-                    <div class="article-card__info">
-                      <div class="article-card__info-elem">
-                        Auteur
-                      </div>
-                      <div class="article-card__info-elem article-card__info-elem--time">
-                        3 m
-                      </div>
+                  <!-- absolute  -->
+                  <div class="article-card__info">
+                    <div class="article-card__info-elem">
+                      Auteur
+                    </div>
+                    <div class="article-card__info-elem article-card__info-elem--time">
+                      3 m
                     </div>
                   </div>
+                </div>
 
-                  <div class="article-card__content">
-                    <!-- top  -->
-                    <div class="article-card__content-top">
-                      <div class="article-card__content-title">
-                        LES ODEURS
-                      </div>
-                      <div class="article-card__content-desc">
-                        Un ennemi silencieux pour les foyers et les entreprises
-                      </div>
+                <div class="article-card__content">
+                  <!-- top  -->
+                  <div class="article-card__content-top">
+                    <div class="article-card__content-title">
+                      LES ODEURS
                     </div>
-                    <!-- bottom  -->
-                    <div class="article-card__content-top">
-                      <a href="#" class="article-card__content-link">En savoir plus</a>
-                      <!-- не забыть ховеры  -->
+                    <div class="article-card__content-desc">
+                      Un ennemi silencieux pour les foyers et les entreprises
                     </div>
-
                   </div>
-
-
+                  <!-- bottom  -->
+                  <div class="article-card__content-top">
+                    <a href="#" class="article-card__content-link">En savoir plus</a>
+                    <!-- не забыть ховеры  -->
+                  </div>
 
                 </div>
-                <!-- item 1 -->
-                <div class="latest__article-card article-card">
 
-                  <!-- preview -->
-                  <div class="article-card__preview">
-                    <img src="img/article.png" alt="" class="article-card__preview-elem">
 
-                    <!-- absolute  -->
-                    <div class="article-card__info">
-                      <div class="article-card__info-elem">
-                        Auteur
-                      </div>
-                      <div class="article-card__info-elem article-card__info-elem--time">
-                        3 m
-                      </div>
+
+              </div>
+              <!-- item 1 -->
+              <div class="latest__article-card article-card">
+
+                <!-- preview -->
+                <div class="article-card__preview">
+                  <img src="img/article.png" alt="" class="article-card__preview-elem">
+
+                  <!-- absolute  -->
+                  <div class="article-card__info">
+                    <div class="article-card__info-elem">
+                      Auteur
+                    </div>
+                    <div class="article-card__info-elem article-card__info-elem--time">
+                      3 m
                     </div>
                   </div>
+                </div>
 
-                  <div class="article-card__content">
-                    <!-- top  -->
-                    <div class="article-card__content-top">
-                      <div class="article-card__content-title">
-                        INSPECTION
-                      </div>
-                      <div class="article-card__content-desc">
-                        Votre allié pour des canalisations en parfaite santé
-                      </div>
+                <div class="article-card__content">
+                  <!-- top  -->
+                  <div class="article-card__content-top">
+                    <div class="article-card__content-title">
+                      INSPECTION
                     </div>
-                    <!-- bottom  -->
-                    <div class="article-card__content-top">
-                      <a href="#" class="article-card__content-link">En savoir plus</a>
-                      <!-- не забыть ховеры  -->
+                    <div class="article-card__content-desc">
+                      Votre allié pour des canalisations en parfaite santé
                     </div>
-
                   </div>
-
-
+                  <!-- bottom  -->
+                  <div class="article-card__content-top">
+                    <a href="#" class="article-card__content-link">En savoir plus</a>
+                    <!-- не забыть ховеры  -->
+                  </div>
 
                 </div>
-                <!-- item 1 -->
-                <div class="latest__article-card article-card">
 
-                  <!-- preview -->
-                  <div class="article-card__preview">
-                    <img src="img/article.png" alt="" class="article-card__preview-elem">
 
-                    <!-- absolute  -->
-                    <div class="article-card__info">
-                      <div class="article-card__info-elem">
-                        Auteur
-                      </div>
-                      <div class="article-card__info-elem article-card__info-elem--time">
-                        3 m
-                      </div>
+
+              </div>
+              <!-- item 1 -->
+              <div class="latest__article-card article-card">
+
+                <!-- preview -->
+                <div class="article-card__preview">
+                  <img src="img/article.png" alt="" class="article-card__preview-elem">
+
+                  <!-- absolute  -->
+                  <div class="article-card__info">
+                    <div class="article-card__info-elem">
+                      Auteur
+                    </div>
+                    <div class="article-card__info-elem article-card__info-elem--time">
+                      3 m
                     </div>
                   </div>
+                </div>
 
-                  <div class="article-card__content">
-                    <!-- top  -->
-                    <div class="article-card__content-top">
-                      <div class="article-card__content-title">
-                        Hydrocurage
-                      </div>
-                      <div class="article-card__content-desc">
-                        Une solution révolutionnaire pour l'entretien des canalisations
-                      </div>
+                <div class="article-card__content">
+                  <!-- top  -->
+                  <div class="article-card__content-top">
+                    <div class="article-card__content-title">
+                      Hydrocurage
                     </div>
-                    <!-- bottom  -->
-                    <div class="article-card__content-top">
-                      <a href="#" class="article-card__content-link">En savoir plus</a>
-                      <!-- не забыть ховеры  -->
+                    <div class="article-card__content-desc">
+                      Une solution révolutionnaire pour l'entretien des canalisations
                     </div>
-
                   </div>
-
-
+                  <!-- bottom  -->
+                  <div class="article-card__content-top">
+                    <a href="#" class="article-card__content-link">En savoir plus</a>
+                    <!-- не забыть ховеры  -->
+                  </div>
 
                 </div>
+
+
+
               </div>
             </div>
-
           </div>
-        </section>
+
+        </div>
+      </section>
 
 
-
-
-
-      </div>
     </div>
 
 
-    <footer class="footer">
-  <div class="flex content">
-    <div class="logo">
-      <img src="img/footer_logo.png" alt="">
-    </div>
-    <div class="contact">
-      <div class="flex tel">
-        <div class="tel__img">
-          <img src="img/icons/tel.svg" alt="">
+    <footer class="foot">
+  <div class="container">
+    <div class="foot__wrap">
+
+      <!-- left  -->
+      <div class="foot__left">
+        <!-- logo  -->
+        <div class="foot__logo">
+          <img src="img/footer_logo.png" alt="" class="foot_logo-img">
         </div>
-        <span>Téléphone : 01 84 80 01 87</span>
-      </div>
-      <div class="flex tel">
-        <div class="tel__img">
-          <img src="img/icons/mail.svg" alt="">
-        </div>
-        <span>Mail : contact@odebouchage.fr</span>
       </div>
 
-      <ul class="footer__socials socials">
-
-        <li class="socials__item">
-          <a href="https://www.youtube.com/channel/UCCf6S23ljozTcl6livJEHLQ" class="socials__link" target="_blank">
-            <svg class="socials__icon" viewBox="0 0 35 35">
-              <use xlink:href="img/icons/sprite.svg#yout-icon">
-              </use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="socials__item">
-          <a href="https://www.linkedin.com/in/o-debouchage-service-2b05282a0/" class="socials__link" target="_blank">
-            <svg class="socials__icon" viewBox="0 0 35 35">
-              <use xlink:href="img/icons/sprite.svg#link-icon">
-              </use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="socials__item">
-          <a href="https://www.instagram.com/odebouchage" class="socials__link" target="_blank">
-            <svg class="socials__icon" viewBox="0 0 35 35">
-              <use xlink:href="img/icons/sprite.svg#insta-icon">
-              </use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="socials__item">
-          <a href="https://www.facebook.com/profile.php?id=61553792194009" class="socials__link" target="_blank">
-            <svg class="socials__icon" viewBox="0 0 35 35">
-              <use xlink:href="img/icons/sprite.svg#fb-icon"></use>
-            </svg>
-          </a>
-        </li>
-
-        <li class="socials__item">
-          <a href="https://www.tiktok.com/@odebouchage" class="socials__link" target="_blank">
-            <svg class="socials__icon" viewBox="0 0 35 35">
-              <use xlink:href="img/icons/sprite.svg#tiktok-icon"></use>
-            </svg>
-          </a>
-        </li>
-
-      </ul>
-
-
-      <div class="small">
-        <div>
-          <a href="politics.html">
-            Politique de confidentialité
-          </a>
+      <!-- middle  -->
+      <div class="foot__middle">
+        <!-- phone  -->
+        <div class="foot__middle-phone">
+          <span>Téléphone :</span> <a href="tel:+0184800187">01 84 80 01 87</a>
         </div>
-        <div>
-          <a href="cookies.html">
-            Politique des Cookies
-          </a>
+        <!-- mail  -->
+        <div class="foot__middle-mail">
+          <span>Mail :</span> <a href="mailto:contact@odebuchage.fr">contact@odebuchage.fr</a>
         </div>
-        <div>
-          <a href="mentions.html">
-            Mentions Légales
-          </a>
-        </div>
-        <div>
-          <a href="https://incrona.com/" target="_blank " class="footer__incrona">
-            <span>
+        <!-- socials -->
+        <ul class="foot__middle-socials socials">
+
+          <li class="socials__item">
+            <a href="https://www.youtube.com/channel/UCCf6S23ljozTcl6livJEHLQ" class="socials__link" target="_blank">
+              <svg class="socials__icon" viewBox="0 0 35 35">
+                <use xlink:href="img/icons/sprite.svg#yout-icon">
+                </use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="socials__item">
+            <a href="https://www.linkedin.com/in/o-debouchage-service-2b05282a0/" class="socials__link" target="_blank">
+              <svg class="socials__icon" viewBox="0 0 35 35">
+                <use xlink:href="img/icons/sprite.svg#link-icon">
+                </use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="socials__item">
+            <a href="https://www.instagram.com/odebouchage" class="socials__link" target="_blank">
+              <svg class="socials__icon" viewBox="0 0 35 35">
+                <use xlink:href="img/icons/sprite.svg#insta-icon">
+                </use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="socials__item">
+            <a href="https://www.facebook.com/profile.php?id=61553792194009" class="socials__link" target="_blank">
+              <svg class="socials__icon" viewBox="0 0 35 35">
+                <use xlink:href="img/icons/sprite.svg#fb-icon"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="socials__item">
+            <a href="https://www.tiktok.com/@odebouchage" class="socials__link" target="_blank">
+              <svg class="socials__icon" viewBox="0 0 35 35">
+                <use xlink:href="img/icons/sprite.svg#tiktok-icon"></use>
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+        <!-- links  -->
+        <div class="foot__middle-links foot__middle-links--desktop">
+          <a href="politics.html" class="foot__middle-link">Politique de confidentialité</a>
+          <a href="cookies.html" class="foot__middle-link">Politique des Cookies</a>
+          <a href="mentions.html" class="foot__middle-link">Mentions Légales</a>
+          <a href="https://incrona.com/" class="foot__middle-link foot__middle-link--icon" target="_blank"><span>
               Site développé par
             </span>
-            <img src="img/icons/incrona.svg" alt="">
-          </a>
+            <img src="img/icons/incrona.svg" alt=""></a>
         </div>
       </div>
-    </div>
-    <div class="links">
-      <div class="flex main">
-        <a href="index.html">
-          Accueil
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
-            <path
-              d="M18.3849 2H3.62265C3.45952 2 3.30307 2.0648 3.18772 2.18016C3.07236 2.29551 3.00756 2.45196 3.00756 2.61509C3.00756 2.77823 3.07236 2.93468 3.18772 3.05003C3.30307 3.16538 3.45952 3.23019 3.62265 3.23019H16.8998L3.18778 16.9425C3.12903 16.9992 3.08217 17.0671 3.04994 17.1421C3.0177 17.2172 3.00073 17.2979 3.00002 17.3796C2.99931 17.4612 3.01488 17.5422 3.0458 17.6178C3.07673 17.6934 3.1224 17.7621 3.18016 17.8198C3.23791 17.8776 3.30659 17.9233 3.38218 17.9542C3.45777 17.9851 3.53877 18.0007 3.62044 18C3.70211 17.9993 3.78282 17.9823 3.85787 17.9501C3.93291 17.9178 4.00078 17.871 4.05752 17.8122L17.7698 4.09993V17.3773C17.7698 17.5405 17.8346 17.6969 17.95 17.8123C18.0653 17.9276 18.2218 17.9924 18.3849 17.9924C18.548 17.9924 18.7045 17.9276 18.8198 17.8123C18.9352 17.6969 19 17.5405 19 17.3773V2.61509C19 2.45196 18.9352 2.29551 18.8198 2.18016C18.7045 2.0648 18.548 2 18.3849 2Z"
-              fill="#DD2D34" />
-          </svg>
-        </a>
-        <a href="about.html">
-          A propos
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
-            <path
-              d="M18.3849 2H3.62265C3.45952 2 3.30307 2.0648 3.18772 2.18016C3.07236 2.29551 3.00756 2.45196 3.00756 2.61509C3.00756 2.77823 3.07236 2.93468 3.18772 3.05003C3.30307 3.16538 3.45952 3.23019 3.62265 3.23019H16.8998L3.18778 16.9425C3.12903 16.9992 3.08217 17.0671 3.04994 17.1421C3.0177 17.2172 3.00073 17.2979 3.00002 17.3796C2.99931 17.4612 3.01488 17.5422 3.0458 17.6178C3.07673 17.6934 3.1224 17.7621 3.18016 17.8198C3.23791 17.8776 3.30659 17.9233 3.38218 17.9542C3.45777 17.9851 3.53877 18.0007 3.62044 18C3.70211 17.9993 3.78282 17.9823 3.85787 17.9501C3.93291 17.9178 4.00078 17.871 4.05752 17.8122L17.7698 4.09993V17.3773C17.7698 17.5405 17.8346 17.6969 17.95 17.8123C18.0653 17.9276 18.2218 17.9924 18.3849 17.9924C18.548 17.9924 18.7045 17.9276 18.8198 17.8123C18.9352 17.6969 19 17.5405 19 17.3773V2.61509C19 2.45196 18.9352 2.29551 18.8198 2.18016C18.7045 2.0648 18.548 2 18.3849 2Z"
-              fill="#DD2D34" />
-          </svg>
-        </a>
-        <a href="tarifs.html">
-          Tarifs
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
-            <path
-              d="M18.3849 2H3.62265C3.45952 2 3.30307 2.0648 3.18772 2.18016C3.07236 2.29551 3.00756 2.45196 3.00756 2.61509C3.00756 2.77823 3.07236 2.93468 3.18772 3.05003C3.30307 3.16538 3.45952 3.23019 3.62265 3.23019H16.8998L3.18778 16.9425C3.12903 16.9992 3.08217 17.0671 3.04994 17.1421C3.0177 17.2172 3.00073 17.2979 3.00002 17.3796C2.99931 17.4612 3.01488 17.5422 3.0458 17.6178C3.07673 17.6934 3.1224 17.7621 3.18016 17.8198C3.23791 17.8776 3.30659 17.9233 3.38218 17.9542C3.45777 17.9851 3.53877 18.0007 3.62044 18C3.70211 17.9993 3.78282 17.9823 3.85787 17.9501C3.93291 17.9178 4.00078 17.871 4.05752 17.8122L17.7698 4.09993V17.3773C17.7698 17.5405 17.8346 17.6969 17.95 17.8123C18.0653 17.9276 18.2218 17.9924 18.3849 17.9924C18.548 17.9924 18.7045 17.9276 18.8198 17.8123C18.9352 17.6969 19 17.5405 19 17.3773V2.61509C19 2.45196 18.9352 2.29551 18.8198 2.18016C18.7045 2.0648 18.548 2 18.3849 2Z"
-              fill="#DD2D34" />
-          </svg>
-        </a>
-        <a href="blog.html">
-          Blog
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
-            <path
-              d="M18.3849 2H3.62265C3.45952 2 3.30307 2.0648 3.18772 2.18016C3.07236 2.29551 3.00756 2.45196 3.00756 2.61509C3.00756 2.77823 3.07236 2.93468 3.18772 3.05003C3.30307 3.16538 3.45952 3.23019 3.62265 3.23019H16.8998L3.18778 16.9425C3.12903 16.9992 3.08217 17.0671 3.04994 17.1421C3.0177 17.2172 3.00073 17.2979 3.00002 17.3796C2.99931 17.4612 3.01488 17.5422 3.0458 17.6178C3.07673 17.6934 3.1224 17.7621 3.18016 17.8198C3.23791 17.8776 3.30659 17.9233 3.38218 17.9542C3.45777 17.9851 3.53877 18.0007 3.62044 18C3.70211 17.9993 3.78282 17.9823 3.85787 17.9501C3.93291 17.9178 4.00078 17.871 4.05752 17.8122L17.7698 4.09993V17.3773C17.7698 17.5405 17.8346 17.6969 17.95 17.8123C18.0653 17.9276 18.2218 17.9924 18.3849 17.9924C18.548 17.9924 18.7045 17.9276 18.8198 17.8123C18.9352 17.6969 19 17.5405 19 17.3773V2.61509C19 2.45196 18.9352 2.29551 18.8198 2.18016C18.7045 2.0648 18.548 2 18.3849 2Z"
-              fill="#DD2D34" />
-          </svg>
-        </a>
-        <a href="contact.html">
-          Contact
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
-            <path
-              d="M18.3849 2H3.62265C3.45952 2 3.30307 2.0648 3.18772 2.18016C3.07236 2.29551 3.00756 2.45196 3.00756 2.61509C3.00756 2.77823 3.07236 2.93468 3.18772 3.05003C3.30307 3.16538 3.45952 3.23019 3.62265 3.23019H16.8998L3.18778 16.9425C3.12903 16.9992 3.08217 17.0671 3.04994 17.1421C3.0177 17.2172 3.00073 17.2979 3.00002 17.3796C2.99931 17.4612 3.01488 17.5422 3.0458 17.6178C3.07673 17.6934 3.1224 17.7621 3.18016 17.8198C3.23791 17.8776 3.30659 17.9233 3.38218 17.9542C3.45777 17.9851 3.53877 18.0007 3.62044 18C3.70211 17.9993 3.78282 17.9823 3.85787 17.9501C3.93291 17.9178 4.00078 17.871 4.05752 17.8122L17.7698 4.09993V17.3773C17.7698 17.5405 17.8346 17.6969 17.95 17.8123C18.0653 17.9276 18.2218 17.9924 18.3849 17.9924C18.548 17.9924 18.7045 17.9276 18.8198 17.8123C18.9352 17.6969 19 17.5405 19 17.3773V2.61509C19 2.45196 18.9352 2.29551 18.8198 2.18016C18.7045 2.0648 18.548 2 18.3849 2Z"
-              fill="#DD2D34" />
-          </svg>
-        </a>
-      </div>
-      <div class="flex second services">
-        <div class="fl1">
-          <div><a href="sanitation.html">Assainissement</a></div>
-          <div><a href="hydrocurage.html">Hydrocurage</a></div>
+
+      <!-- right -->
+      <div class="foot__right">
+        <!-- right top  -->
+        <div class="foot__right-top">
+          <a class="foot__right-top-link" href="index.html">Accueil</a>
+          <a class="foot__right-top-link" href="about.html">A propos</a>
+          <a class="foot__right-top-link" href="tarifs.html">Tarifs</a>
+          <a class="foot__right-top-link" href="blog.html">Blog</a>
+          <a class="foot__right-top-link" href="contact.html">Contact</a>
         </div>
-        <div class="fl1">
-          <div><a href="endoscopic.html">Inspection par caméra</a></div>
-          <div><a href="unblocking.html">Débouchage de canalisation</a></div>
+        <!-- right bottom  -->
+        <div class="foot__right-bottom">
+          <div class="foot__right-bottom-elem">
+            <a class="foot__right-bottom-elem-link" href="sanitation.html">Assainissement</a>
+            <a class="foot__right-bottom-elem-link" href="hydrocurage.html">Hydrocurage</a>
+          </div>
+          <div class="foot__right-bottom-elem">
+            <a class="foot__right-bottom-elem-link" href="hydrocurage.html">Inspection par
+              caméra</a>
+            <a class="foot__right-bottom-elem-link" href="unblocking.html">Débouchage de canalisation</a>
+          </div>
         </div>
       </div>
+
+
     </div>
 
-
-    <div class="small1 d-none">
-      <div>
-        <a href="politics.html">
-          Politique de confidentialité
-        </a>
-      </div>
-      <div>
-        <a href="cookies.html">
-          Politique des Cookies
-        </a>
-      </div>
-      <div>
-        <a href="mentions.html">
-          Mentions Légales
-        </a>
-      </div>
-      <div>
-        <a href="https://incrona.com" target="_blank" class="footer__incrona">
-          <span>
-            Site développé par
-          </span>
-          <img src="img/icons/incrona.svg" alt="">
-        </a>
-      </div>
+    <!-- links  -->
+    <div class="foot__middle-links foot__middle-links--mobile">
+      <a href="politics.html" class="foot__middle-link">Politique de confidentialité</a>
+      <a href="cookies.html" class="foot__middle-link">Politique des Cookies</a>
+      <a href="mentions.html" class="foot__middle-link">Mentions Légales</a>
+      <a href="https://incrona.com/" class="foot__middle-link foot__middle-link--icon" target="_blank"><span>
+          Site développé par
+        </span>
+        <img src="img/icons/incrona.svg" alt=""></a>
     </div>
-
   </div>
-
 </footer>
 
 <div class="fix-block">
@@ -643,12 +580,7 @@
 <script async
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ1PgpP0t6s1sAsXYM_zn9MZ7MEVeMBlk&callback=initMap">
   </script>
-
-
-
-</body>
-
-</html>
+  </div>
 </body>
 
 </html>
